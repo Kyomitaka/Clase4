@@ -1,0 +1,51 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.clase4e1;
+
+import java.util.Scanner;
+
+public class Clase4E1 {
+
+        static class perros {
+            String raza;
+            String tamanio;
+            int edad;
+            String color;
+            
+            public String getInfo() {
+                return ("\nRaza : "+raza+ "\n" +
+                        "Tamaño : "+tamanio+" \n" +
+                        "Edad : "+edad+"\n" +
+                        "Color : "+color);
+            }
+            
+            public void setInfo(String raza, String tamanno, int edad, String color){
+                this.raza = raza;
+                tamanio = tamanno;
+                this.edad = edad;
+                this.color= color;
+        }
+    }
+            public static void main(String[] args) {
+                perros mi_perro = new perros();
+                String raza, tamanno, color;
+                int edad;
+                Scanner lect = new Scanner(System.in);
+                Scanner num = new Scanner(System.in);
+                
+                System.out.print("Ingrese raza : ");
+                raza = lect.nextLine();
+                System.out.print("Ingrese tamaño: ");
+                tamanno = lect.nextLine();
+                System.out.print("Ingrese edad : ");
+                edad = num.nextInt();
+                System.out.print("Ingrese color : ");
+                color = lect.nextLine();
+
+                mi_perro.setInfo(raza, tamanno, edad, color);
+                System.out.println(mi_perro.getInfo());
+
+    }
+ }  
