@@ -1,0 +1,34 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.clase4e1;
+
+public class Clase4E1 {
+
+        static class perros {
+            String raza;
+            String tamanio;
+            int edad;
+            String color;
+            
+            public String getInfo() {
+                return ("Raza : "+raza+ "\n" +
+                        "Tamaño : "+tamanio+" \n" +
+                        "Edad : "+edad+"\n" +
+                        "Color : "+color);
+            }
+        }
+        
+    public static void main(String[] args) {   
+        perros mi_perro = new perros();
+        int a = 10;
+
+        mi_perro.raza="Maltes";
+        mi_perro.tamanio="Pequeño";
+        mi_perro.edad=2;
+        mi_perro.color="Blanco";
+
+        System.out.println(mi_perro.getInfo());
+    }
+} 
